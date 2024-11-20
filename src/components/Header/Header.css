@@ -1,0 +1,105 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
+
+.header{
+  height: 38vw;
+  background: url('../src/assets/caraHotel1.jpg') no-repeat;
+  background-size: 100%;
+  position: relative;
+  height: calc(100vh - 90px);
+  background-position: center;
+  align-items: center;
+  height: 100vh; /* Asegúrate de que el cuerpo ocupe toda la altura de la pantalla */
+  display: flex; /*nso ayuda a colocarlo como padre*/
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+
+}
+.name{
+
+  color:rgb(0, 0, 0);
+  height: 400px;
+  justify-content: right;
+  align-items: center;
+  border-right: 5px solid rgb(0, 0, 0);
+  text-shadow: 1px 6px 15px rgba(212, 195, 34, 0.7); /* Sombra para el h2 */
+  border-radius: 0.25rem;
+}
+.header-contents{
+  position: absolute;
+  display: flex;
+  gap: 1.5vw;
+  animation: fadeIn 3s;
+  border-radius: 5px;
+}
+
+.header-contents h1{
+  font-weight:500;
+  color: rgb(0, 0, 0);
+  font-size: max(7.5vw,22px);
+
+}
+.text-title{
+  text-align: right;
+  overflow-y: hidden;
+  margin: 1rem;
+  font-weight: bold;
+}
+.descripcion-slogan{
+  padding-top: 6%;
+}
+.descripcion-slogan h2{
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  text-shadow: 3px 3px 2px rgba(173, 173, 172, 0.7); /* Sombra para el h2 */
+}
+.descripcion-slogan h3{
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgb(167, 143, 77);
+  overflow: hidden;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.header-contents p{
+  color: white;
+  font-size: 1.8vw;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 1); /* Sombra para el p */
+}
+.header-contents button{
+  border: none;
+  color: #7c620e;
+  font-weight: 500;
+  padding: 1vw 2.3vw;
+  background: #dbbe88;
+  font-size: max(1vw,13px);
+  border-radius: 5px;
+  box-shadow: 5px 5px rgb(97, 81, 81);
+  cursor: pointer;
+}
+.header-contents button:hover{
+  background-color: black;
+  color: white;
+  box-shadow: 5px 5px rgb(100, 91, 7);
+}
+@media (max-width:1050px) {
+  .header{
+      height: 38vw;
+  }
+  .header-contents{
+      max-width: 45%;
+  }
+}
+@media(max-width:750px){
+  .header-contents{
+      max-width: 55%;
+  }
+  .header-contents p{
+    display: none;
+  }
+  .header-contents button{
+      padding: 2vw 4vw;
+  }
+}
