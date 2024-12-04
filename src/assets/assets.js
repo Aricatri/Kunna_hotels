@@ -5,7 +5,6 @@ import logo from "./iconKuna.png";
 import menuPanama from "./MenuPanama.jpg";
 import menuColombia from "./MenuColombia.jpg";
 import menuEcuador from "./MenuEcuador.jpg";
-import menuElSalvador from "./MenuElSalvador.jpg";
 import menuHaiti from "./MenuHaiti.jpg";
 import menuJaimaica from "./Menujamaica1.jpg";
 import menuMexico from "./Menumexico.jpg";
@@ -122,7 +121,6 @@ export const assets = {
   basket_icon_full,
   menuColombia,
   menuEcuador,
-  menuElSalvador,
   menuHaiti,
   menuJaimaica,
   menuMexico,
@@ -206,7 +204,7 @@ export const menu_list = [
   },
   {
     menu_name: "El Salvador",
-    menu_image: menuElSalvador,
+    menu_image: menuEcuador,
   },
   {
     menu_name: "Haiti",
@@ -505,7 +503,7 @@ export const beedromsList = [
     beedrom_desc:
       "Guest room , 1 king , No view",
     beedrom_category: "Habitaciones con instalaciones para personas con necesidades especiales",
-    beedrom_price: 20,
+          beedrom_price: 20,
   },
 
   {
