@@ -1,7 +1,8 @@
 import React from 'react'
 import './Header.css'
 
-const Header = () => {
+const Header = ({setShowLogin}) => {
+
     return (
         <div className='header'>
             <div className='header-contents'>
@@ -16,7 +17,7 @@ const Header = () => {
                     <h2 class="orga-title">Asegura una gran estancia </h2>
                     <h2 class="base-title"> para disfrutar tu viaje sin problemas</h2>
                     <h3>Conocenos y descubre la  <b>mejor</b> experiencia con nosotros</h3>
-                    <button id="btn-know" ><a href="#registro">Nuevo registro</a></button>
+                    <button onClick={()=>setShowLogin(true)}>Ingresar</button>
                 </div>
             </div>
 

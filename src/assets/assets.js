@@ -234,256 +234,7 @@ export const hotels_List = [
     food_desc:
       "Un salteado de carne, cebolla y tomate con papas fritas y arroz.",
     food_category: "Peruana",
-  },
-  {
-    food_id: 2,
-    food_name: "Cesviche",
-    food_image: food_2,
-    food_price: 18,
-    food_desc:
-      "Pescado fresco marinado en limón, acompañado de cebolla y maíz.",
-    food_category: "Peruana",
-  },
-  {
-    food_id: 3,
-    food_name: "Tacos",
-    food_image: food_3,
-    food_price: 16,
-    food_desc: "Tortillas rellenas de carne, verduras y salsas mexicanas.",
-    food_category: "Mexicana",
-  },
-  {
-    food_id: 4,
-    food_name: "Paella",
-    food_image: food_4,
-    food_price: 24,
-    food_desc: "Arroz cocido con mariscos, pollo y azafrán.",
-    food_category: "Española",
-  },
-  {
-    food_id: 5,
-    food_name: "Arroz chaufa",
-    food_image: food_5,
-    food_price: 14,
-    food_desc: "Un clasico de la mezcla asiatico-peruana.",
-    food_category: "China",
-  },
-  {
-    food_id: 6,
-    food_name: "Tortilla de patatas",
-    food_image: food_6,
-    food_price: 12,
-    food_desc: "Tortilla clásica hecha con papas y huevos.",
-    food_category: "Española",
-  },
-  {
-    food_id: 7,
-    food_name: "Arroz con pato",
-    food_image: food_7,
-    food_price: 20,
-    food_desc: "Arroz con pato cocido en su propio jugo y especias.",
-    food_category: "Peruana",
-  },
-  {
-    food_id: 8,
-    food_name: "Lasagna",
-    food_image: food_8,
-    food_price: 15,
-    food_desc: "Capas de pasta con carne, salsa de tomate y queso.",
-    food_category: "Italiana",
-  },
-  {
-    food_id: 9,
-    food_name: "Torta Helada",
-    food_image: food_9,
-    food_price: 14,
-    food_desc: "Postre frío de gelatina y bizcocho.",
-    food_category: "Postres",
-  },
-  {
-    food_id: 10,
-    food_name: "Helado de frutas",
-    food_image: food_10,
-    food_price: 22,
-    food_desc: "Delicioso helado hecho con frutas frescas.",
-    food_category: "Postres",
-  },
-  {
-    food_id: 11,
-    food_name: "Ensalada caprese",
-    food_image: food_11,
-    food_price: 10,
-    food_desc: "Ensalada de tomate, mozzarella y albahaca.",
-    food_category: "Ensaladas",
-  },
-  {
-    food_id: 12,
-    food_name: "Helado de vainilla",
-    food_image: food_12,
-    food_price: 12,
-    food_desc: "Clásico helado de vainilla, suave y cremoso.",
-    food_category: "Postres",
-  },
-  {
-    food_id: 13,
-    food_name: "Pasta alfredo",
-    food_image: food_13,
-    food_price: 12,
-    food_desc: "Pasta con cremosa salsa de queso parmesano.",
-    food_category: "Italiana",
-  },
-  {
-    food_id: 14,
-    food_name: "Quesadillas",
-    food_image: food_14,
-    food_price: 18,
-    food_desc: "Tortillas rellenas de queso y otros ingredientes.",
-    food_category: "Mexicana",
-  },
-  {
-    food_id: 15,
-    food_name: "Sandwich a la plancha",
-    food_image: food_15,
-    food_price: 16,
-    food_desc: "Sandwich tostado relleno de jamón y queso.",
-    food_category: "Mixtura",
-  },
-  {
-    food_id: 16,
-    food_name: "Chile en nogada",
-    food_image: food_16,
-    food_price: 24,
-    food_desc: "Pimiento relleno de carne con salsa de nuez.",
-    food_category: "Mexicana",
-  },
-  {
-    food_id: 17,
-    food_name: "Cup Cake",
-    food_image: food_17,
-    food_price: 14,
-    food_desc: "Pastel pequeño decorado con glaseado.",
-    food_category: "Postres",
-  },
-  {
-    food_id: 18,
-    food_name: "Pasta con albóndigas",
-    food_image: food_18,
-    food_price: 12,
-    food_desc: "Pasta con albóndigas en salsa de tomate.",
-    food_category: "Italiana",
-  },
-  {
-    food_id: 19,
-    food_name: "Bollos rellenos",
-    food_image: food_19,
-    food_price: 20,
-    food_desc: "Bollos rellenos de carne y verduras.",
-    food_category: "China",
-  },
-  {
-    food_id: 20,
-    food_name: "Pollo a la brasa",
-    food_image: food_20,
-    food_price: 15,
-    food_desc: "Pollo asado acompañado de papas y ensalada.",
-    food_category: "Peruana",
-  },
-  {
-    food_id: 21,
-    food_name: "Hongos al ajo",
-    food_image: food_21,
-    food_price: 14,
-    food_desc: "Hongos salteados con ajo y aceite de oliva.",
-    food_category: "Mixtura",
-  },
-  {
-    food_id: 22,
-    food_name: "Coliflor frita",
-    food_image: food_22,
-    food_price: 22,
-    food_desc: "Coliflor crujiente frita al estilo casero.",
-    food_category: "Ensaladas",
-  },
-  {
-    food_id: 23,
-    food_name: "Pulao mixto",
-    food_image: food_23,
-    food_price: 10,
-    food_desc: "Arroz con verduras y especias.",
-    food_category: "Ensaladas",
-  },
-  {
-    food_id: 24,
-    food_name: "Pachamanca",
-    food_image: food_24,
-    food_price: 12,
-    food_desc: "Plato andino cocido en piedras calientes.",
-    food_category: "Peruana",
-  },
-  {
-    food_id: 25,
-    food_name: "Nachos",
-    food_image: food_25,
-    food_price: 12,
-    food_desc: "Tortillas de maíz cubiertas con queso y salsa.",
-    food_category: "Mexicana",
-  },
-  {
-    food_id: 26,
-    food_name: "Tallarin saltado",
-    food_image: food_26,
-    food_price: 18,
-    food_desc: "Fideos salteados con verduras y carne.",
-    food_category: "China",
-  },
-  {
-    food_id: 27,
-    food_name: "Gambas al ajillo",
-    food_image: food_27,
-    food_price: 16,
-    food_desc: "Gambas salteadas con ajo y perejil.",
-    food_category: "Española",
-  },
-  {
-    food_id: 28,
-    food_name: "Pizza",
-    food_image: food_28,
-    food_price: 24,
-    food_desc: "Pizza horneada con queso, salsa y tus ingredientes favoritos.",
-    food_category: "Italiana",
-  },
-  {
-    food_id: 29,
-    food_name: "Noodles en mantequilla",
-    food_image: food_29,
-    food_price: 14,
-    food_desc: "Fideos con salsa de mantequilla y ajo.",
-    food_category: "Mixtura",
-  },
-  {
-    food_id: 30,
-    food_name: "Cheesecake de fresa",
-    food_image: food_30,
-    food_price: 12,
-    food_desc: "Tarta de queso con cobertura de fresas.",
-    food_category: "Postres",
-  },
-  {
-    food_id: 31,
-    food_name: "Ensalada rusa",
-    food_image: food_31,
-    food_price: 20,
-    food_desc: "Mezcla de papas, zanahorias y guisantes con mayonesa.",
-    food_category: "Ensaladas",
-  },
-  {
-    food_id: 32,
-    food_name: "Guacamole",
-    food_image: food_32,
-    food_price: 15,
-    food_desc: "Puré de aguacate con tomate, cebolla y limón.",
-    food_category: "Mexicana",
-  },
+  }
 ];
 export const food_list = [
   {
@@ -754,6 +505,7 @@ export const beedromsList = [
     beedrom_desc:
       "Guest room , 1 king , No view",
     beedrom_category: "Habitaciones con instalaciones para personas con necesidades especiales",
+    beedrom_price: 20,
   },
 
   {
@@ -764,6 +516,7 @@ export const beedromsList = [
     beedrom_desc:
       "Guest room , 2 double , No view",
     beedrom_category: "Habitaciones con instalaciones para personas con necesidades especiales",
+    beedrom_price: 20,
   },
   {
     beedrom_id: 3,
@@ -773,6 +526,7 @@ export const beedromsList = [
     beedrom_desc:
       "Guest room , 1 king , No view",
     beedrom_category: "Habitaciones con instalaciones para personas con necesidades especiales",
+    beedrom_price: 20,
   },
   {
     beedrom_id: 4,
@@ -782,6 +536,7 @@ export const beedromsList = [
     beedrom_desc:
       "Guest room , 2 double , No view",
     beedrom_category: "Habitaciones con instalaciones para personas con necesidades especiales",
+    beedrom_price: 20,
   },
   {
     beedrom_id: 5,
@@ -791,6 +546,7 @@ export const beedromsList = [
     beedrom_desc:
       "Guest room , 2 double",
     beedrom_category: "Totas las habitaciones",
+    beedrom_price: 20,
   },
   {
     beedrom_id: 6,
@@ -800,6 +556,7 @@ export const beedromsList = [
     beedrom_desc:
       "Guest room , 1 king , Countyrard view",
       beedrom_category: "Totas las habitaciones",
+      beedrom_price: 20,
   },
   {
     beedrom_id: 7,
@@ -809,6 +566,7 @@ export const beedromsList = [
     beedrom_desc:
       "Suite , 1 king",
     beedrom_category: "Totas las habitaciones",
+    beedrom_price: 20,
   },
   {
     beedrom_id: 8,
@@ -817,6 +575,7 @@ export const beedromsList = [
     beedrom_name: "IMPERIAL SUITE",
     beedrom_desc:  "Suite, 1 king , mountain view",
     beedrom_category: "Totas las habitaciones",
+    beedrom_price: 20,
   }
 
 ];

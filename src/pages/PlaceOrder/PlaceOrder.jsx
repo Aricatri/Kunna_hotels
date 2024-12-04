@@ -5,7 +5,7 @@ import { assets } from '../../assets/assets';
 import { useNavigate } from 'react-router-dom';
 
 const PlaceOrder = () => {
-
+    const [payment, setPayment] = useState("cod")
     const [data, setData] = useState({
         firstName: "",
         lastName: "",
@@ -17,8 +17,8 @@ const PlaceOrder = () => {
         country: "",
         phone: ""
     })
-
-    const { getTotalCartAmount, placeOrder } = useContext(StoreContext);
+    const [error, setError] = useState(""); // Para manejar errores de validación
+    const { getTotalCartAmount, getTotalAmount, placeOrder } = useContext(StoreContext);
 
     const navigate = useNavigate();
 
@@ -34,10 +34,45 @@ const PlaceOrder = () => {
         }
     }, [])
 
+    const handleSubmit = (event) => {
+        event.preventDefault(); // Evita el comportamiento predeterminado del formulario
+
+        // Verifica que todos los campos estén llenos
+        const isFormComplete = Object.values(data).every(value => value.trim() !== "");
+        if (!isFormComplete) {
+            setError("Por favor, complete todos los campos.");
+            return;
+        }
+
+        // Limpia el mensaje de error si todo está bien
+        setError("");
+
+        // Procesa el pedido
+        placeOrder(data);
+
+        // Resetea el formulario
+        setData({
+            firstName: "",
+            lastName: "",
+            email: "",
+            street: "",
+            city: "",
+            state: "",
+            zipcode: "",
+            country: "",
+            phone: ""
+        });
+
+        // Muestra un mensaje de confirmación (opcional) o redirige
+        alert("Pedido realizado con éxito.");
+        navigate('/');
+    };
+
     return (
-        <div className='place-order'>
+        <form className='place-order' onSubmit={handleSubmit}>
             <div className="place-order-left">
-                <p className='title'>Informacion de entrega</p>
+                <p className='title'>Datos para la reserva</p>
+
                 <div className="multi-field">
                     <input type="text" name='firstName' onChange={onChangeHandler} value={data.firstName} placeholder='Nombre' />
                     <input type="text" name='lastName' onChange={onChangeHandler} value={data.lastName} placeholder='Apellido' />
@@ -53,29 +88,34 @@ const PlaceOrder = () => {
                     <input type="text" name='country' onChange={onChangeHandler} value={data.country} placeholder='Pais' />
                 </div>
                 <input type="text" name='phone' onChange={onChangeHandler} value={data.phone} placeholder='Telefono' />
+                {error && <p className="error">{error}</p>}
             </div>
             <div className="place-order-right">
                 <div className="cart-total">
                     <h2>Total del carrito</h2>
                     <div>
-                        <div className="cart-total-details"><p>Subtotal</p><p>${getTotalCartAmount()}</p></div>
+                        <div className="cart-total-details"><p>Subtotal</p><p>$. {getTotalAmount() }</p></div>
                         <hr />
-                        <div className="cart-total-details"><p>Tarifa de entrega</p><p>${getTotalCartAmount() === 0 ? 0 : 5}</p></div>
+                        <div className="cart-total-details"><p>Por alta concurrencia</p><p>S/. {getTotalCartAmount() + getTotalAmount() === 0 ? 0 : 15}</p></div>
                         <hr />
-                        <div className="cart-total-details"><b>Total</b><b>${getTotalCartAmount() === 0 ? 0 : getTotalCartAmount() + 5}</b></div>
+                        <div className="cart-total-details"><b>Total</b><b>$. {getTotalAmount() + 15}</b></div>
                     </div>
                 </div>
-                <div className="payment-options">
-                    <h2>Seleccionar Metodo de Pago</h2>
-                    <div className="payment-option">
-                        <img src={assets.selector_icon} alt="" />
-                        <p>COD ( VISA )</p>
+                <div className="payment">
+                    <h2>Metodo de pago</h2>
+                    <div onClick={() => setPayment("cod")} className="payment-option">
+                        <img src={payment === "cod" ? assets.checked : assets.un_checked} alt="" />
+                        <p> PAYPAL ( Cash on online )</p>
                     </div>
-                    <button onClick={() => placeOrder(data)}>REALIZAR PEDIDO</button>
+                    <div onClick={() => setPayment("stripe")} className="payment-option">
+                        <img src={payment === "stripe" ? assets.checked : assets.un_checked} alt="" />
+                        <p> BCP ( Credit / Debit )</p>
+                    </div>
                 </div>
+                <button className='place-order-submit' type='submit'>{payment==="cod"?"Ordenar ´pr PAYPAL":"Procegir con BCP"}</button>
 
             </div>
-        </div>
+        </form>
     )
 }
 

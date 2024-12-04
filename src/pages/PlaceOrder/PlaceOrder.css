@@ -14,6 +14,11 @@
   font-weight: 600;
   margin-bottom: 50px;
   color: #6d4c41;
+  margin-left: 5%;
+}
+.place-order{
+  margin-left: 5%;
+  margin-right: 5%;
 }
 .place-order-left input{
   margin-bottom: 15px;
@@ -31,26 +36,27 @@
   width: 100%;
   max-width: max(40%,500px);
 }
-.payment-options{
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  gap: 30px;
+
+.payment{
+  padding-right: 90px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .payment-option{
   display: flex;
   align-items: center;
+  margin: 10px;
   gap: 12px;
-  border: 1px solid #c62828;
+  border: 1px solid #000000;
+  background-color: rgb(204, 182, 182);
   padding: 12px 20px;
   border-radius: 4px;
   cursor: pointer;
 }
 
-/* MEJORA */
 .payment-option:hover {
-  border-color: #FFB300; /* Oro Dorado al pasar el cursor */
+  border-color: #FFB300;
+  background-color: antiquewhite;
 }
 
 .payment-options button{
@@ -62,7 +68,18 @@
   cursor: pointer;
 }
 
-/* MEJORA */
+.place-order-submit{
+  background-color: #eecb78;
+  padding: 10px;
+  border-radius: 10px;
+  border-style: double 2px black;
+  cursor: pointer;
+}
+.place-order-submit:hover{
+  background-color: black;
+  color: white;
+  border-color: white;
+}
 .payment-options button:hover {
   background-color: #2E7D32; /* Verde Hierba en hover */
 }
