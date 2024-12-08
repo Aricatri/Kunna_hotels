@@ -14,7 +14,7 @@ export const BeedromItem = ({id, description , img, name, desc, category }) => {
       backgroundPosition: 'center', // Centra la imagen
       backgroundRepeat: 'no-repeat', // No repite la imagen
       height: '240px', // Altura específica
-      width: '380px',  // Ancho específico
+      width: '350px',  // Ancho específico
     }}>
 
       <div className='beedrom-item-info'>
@@ -23,7 +23,7 @@ export const BeedromItem = ({id, description , img, name, desc, category }) => {
         </div>
         <p className='beedrom-item-name'>{name}</p>
         <p className='beedrom-item-desc'>{desc}</p>
-        <a href='#' className='beedrom-bottonVerMas'>Separar</a>
+        <a href='' className='beedrom-bottonVerMas'>Separar</a>
         {!itemCount
           ?<img className='add' onClick={()=>setItemCount(prev=>prev+1)} src={assets.add_icon_item} alt=" "/>
           :<div className='beedrom-item-counter'>

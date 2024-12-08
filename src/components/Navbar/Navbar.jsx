@@ -36,7 +36,7 @@ const Navbar = ({setShowLogin}) => {
           />
         </Link>
         <Link to='/cart' className='navbar-basket-icon'>
-          {/* Mostrar el GIF si hay artículos en el carrito, de lo contrario el icono estático */}
+          {/* Mostrar el GIF, de lo contrario el icono estático */}
           <img
             src={getTotalCartAmount() > 0 ? assets.basket_icon_full : assets.basket_icon}
             alt="Carrito"

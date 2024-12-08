@@ -14,6 +14,11 @@ const Recomendations = () => {
           return (
             <div  key={index} className='explore-recomendations-list-item'>
               <figure>
+              <img
+                  src={item.image}
+                  alt={`Testimonio de ${item.testimonio_name}`}
+                  className="image-reference"
+                />
               <p className='explore-recomendation-Name'>{item.testimonio_name}</p>
               <p className='explore-recomendation-descrip'> {item.descripcion}</p>
               </figure>

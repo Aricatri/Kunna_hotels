@@ -4,11 +4,26 @@ import { assets } from '../../assets/assets'
 
 const AppDownload = () => {
     return (
-        <div className='app-download' id='app-download'>
-            <p>Para una mejor experiencia, descarga nuestro aplicativo<br />Kunna App</p>
+
+        <div className='app-download' id='app-download' y te invitamos a descargarlo>
+            <p>Te invitamos a conocer mas de<br />Kunna App ¡Descarga ya!</p>
             <div className="app-download-platforms">
-                <img src={assets.play_store} alt="" />
-                <img src={assets.app_store} alt="" />
+            <div class="android">
+                    <h3>Android</h3>
+                    <p >Disponible en Play Store</p>
+                    <button>Descargar</button>
+                    <img src={assets.play_store} alt="" />
+
+                </div>
+                <div class="ios">
+                    <h3>iOS</h3>
+                    <p >Disponible en App Store</p>
+                    <button>Descargar</button>
+                    <img src={assets.app_store} alt="" />
+
+                </div>
+
+
             </div>
         </div>
     )

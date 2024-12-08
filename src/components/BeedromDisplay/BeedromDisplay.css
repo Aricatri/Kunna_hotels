@@ -1,3 +1,33 @@
+.beedrom-menu{
+  margin: 50px 290px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.beedrom-menu-list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin: 20px 0px;
+  overflow-x: scroll;
+  font-size:  max-width;
+  cursor: pointer;
+
+
+}
+.beedrom-display-list{
+  column-gap: 100px;
+
+}
+.beedrom-menu-list::-webkit-scrollbar{
+  display: none;
+}
+.beedrom-menu-list hr{
+  margin: 10px 0;
+
+}
 .beedrom-display{
-  margin: 50px 370px;
+  margin-left: 5%;
+  margin-right: 9%;
 }

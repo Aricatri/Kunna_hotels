@@ -35,22 +35,40 @@ const PlaceOrder = () => {
     }, [])
 
     const handleSubmit = (event) => {
-        event.preventDefault(); // Evita el comportamiento predeterminado del formulario
+        event.preventDefault();
 
-        // Verifica que todos los campos estén llenos
+        // Validación básica
         const isFormComplete = Object.values(data).every(value => value.trim() !== "");
         if (!isFormComplete) {
             setError("Por favor, complete todos los campos.");
             return;
         }
 
-        // Limpia el mensaje de error si todo está bien
+        if (!/^\S+@\S+\.\S+$/.test(data.email)) {
+            setError("El correo electrónico no es válido.");
+            return;
+        }
+
+        if (!/^\d+$/.test(data.phone)) {
+            setError("El número de teléfono solo puede contener dígitos.");
+            return;
+        }
+
         setError("");
 
-        // Procesa el pedido
-        placeOrder(data);
+        // Guardar pedido en localStorage
+        const order = {
+            ...data,
+            paymentMethod: payment,
+            total: getTotalAmount() + 15,
+            date: new Date().toISOString() // Agrega la fecha del pedido
+        };
 
-        // Resetea el formulario
+        const orders = JSON.parse(localStorage.getItem("orders")) || [];
+        orders.push(order);
+        localStorage.setItem("orders", JSON.stringify(orders));
+
+        // Reiniciar formulario
         setData({
             firstName: "",
             lastName: "",
@@ -63,7 +81,6 @@ const PlaceOrder = () => {
             phone: ""
         });
 
-        // Muestra un mensaje de confirmación (opcional) o redirige
         alert("Pedido realizado con éxito.");
         navigate('/');
     };

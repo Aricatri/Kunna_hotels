@@ -110,9 +110,15 @@ import bedroom5 from "./bedroom5.avif";
 import bedroom6 from "./bedroom6.avif";
 import bedroom7 from "./bedroom7.avif";
 import bedroom8 from "./bedroom8.avif";
+import testimonio1 from "./testimonio1.png";
+import testimonio2 from "./testimonio2.png";
+import testimonio3 from "./testimonio3.png";
 
 export const assets = {
   cara_Hotel,
+  testimonio1,
+  testimonio2,
+  testimonio3,
   tresestrellas,
   cuatroestrellas,
   cincoestrellas,
@@ -538,7 +544,7 @@ export const beedromsList = [
   },
   {
     beedrom_id: 5,
-    beedrom_description: ".",
+    beedrom_description: "Clasica",
     beedrom_image: bedroom5,
     beedrom_name: "FAMILY ROOM",
     beedrom_desc:
@@ -558,7 +564,7 @@ export const beedromsList = [
   },
   {
     beedrom_id: 7,
-    beedrom_description: ".",
+    beedrom_description: "Suit Presidencial",
     beedrom_image: bedroom7,
     beedrom_name: "LUXURY SUITE",
     beedrom_desc:
@@ -568,7 +574,7 @@ export const beedromsList = [
   },
   {
     beedrom_id: 8,
-    beedrom_description: ".",
+    beedrom_description: "Suit Presidencial",
     beedrom_image: bedroom8,
     beedrom_name: "IMPERIAL SUITE",
     beedrom_desc:  "Suite, 1 king , mountain view",
@@ -579,11 +585,18 @@ export const beedromsList = [
 ];
 export const testimonios = [
   {
-    testimonio_name: "Carla - 22 años - Perú ",
-    descripcion: "la pase chvr",
+    image: testimonio1,
+    testimonio_name: "Jose - 25 años - Perú ",
+    descripcion: "La mejor experiencia de mi vida, el personal siempre atento y las habitaciones súper cómodas.",
   },
   {
+    image:testimonio2,
     testimonio_name: "Paulo -34 años -Perú",
-    descripcion:" la mejor experiencia",
+    descripcion:"Visite el hoteñ en Perú, el lugar perfecto para desconectarse y disfrutar. Cada detalle está pensado para que te sientas especial.",
+  },
+  {
+    image:testimonio3,
+    testimonio_name: "Edilson -30 años -Perú",
+    descripcion:"Los servicios son de primera categoría y la comida en el restaurante es simplemente deliciosa. Me sentí como en casa.",
   }
 ]

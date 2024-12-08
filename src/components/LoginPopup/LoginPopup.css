@@ -6,11 +6,12 @@
   background-color: #00000090;
   display: grid;
 }
-.login-popup-container{
+.login-popup-container {
   place-self: center;
-  width: max(23vw,330px);
-  color: #6D4C41;
-  background-color: white;
+  width: max(23vw, 330px);
+  color: #dcddd0;
+  background-color: rgba(0, 0, 0, 0.8); /* Negro con 50% de transparencia */
+  border: 4px  double #DDDDDD ;
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -23,7 +24,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #C62828;
+  color: #e6d969;
 }
 .login-popup-title img{
   width: 16px;
@@ -44,8 +45,8 @@
   border: none;
   padding: 10px;
   border-radius: 4px;
-  color: white;
-  background-color: #C62828;
+  color: rgb(10, 0, 0);
+  background-color: #8b7a2b;
   font-size: 15px;
   cursor: pointer;
 }
@@ -62,7 +63,8 @@
 
 
 .login-popup p span{
-  color: #C62828;
+  color: #d0dd58;
   font-weight: 500;
   cursor: pointer;
+  text-decoration: underline;
 }

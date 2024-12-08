@@ -3,20 +3,55 @@
   font-size: max(3vw, 20px);
   text-align: center;
   font-weight: 500;
+  font-size: 30px;
   color: #bdb219 ;
 }
 .app-download-platforms{
-  display: flex;
-  justify-content: center;
-  gap: max(2vw,10px);
-  margin-top: 40px;
-}
-.app-download-platforms img{
-  width:max(30vw,120px);
-  max-width: 180px;
-  transition: 0.5s;
-  cursor: pointer;
+
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  justify-items: center;
+  align-items: center;
 }
 .app-download-platforms img:hover{
   transform: scale(1.05);
+}
+.ios,.android{
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin-top: 80px;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+
+  box-shadow: 10px 10px rgb(138, 121, 26) ;
+}
+.ios button,.android button{
+  width: 30%;
+  height: 24%;
+  margin: 0.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 20px;
+  overflow-y: hidden;
+}
+.ios h3,.android h3{
+  color: white;
+  font-weight: bold;
+  overflow-y: hidden;
+}
+.ios p,.android p{
+  overflow-y: hidden;
+}
+.ios{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) , url('caraHotel1.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.android{
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url('caraHotel1.jpg');
+  background-position: center;
+  background-size: cover;
 }

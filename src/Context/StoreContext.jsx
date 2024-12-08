@@ -1,5 +1,5 @@
 import { createContext, useEffect, useState } from "react";
-import { food_list,hotels_List,menu_list , beedromsList} from "../assets/assets";
+import { food_list,hotels_List,menu_list , tipes_bedrooms_list,beedromsList} from "../assets/assets";
 export const StoreContext = createContext(null);
 
 const StoreContextProvider = (props) => {
@@ -84,6 +84,7 @@ const StoreContextProvider = (props) => {
         cartItems,
         hotels_List,
         beedromsList,
+        tipes_bedrooms_list,
         getTotalAmount,
         getTotalBedroomAmount,
         addToCart,
