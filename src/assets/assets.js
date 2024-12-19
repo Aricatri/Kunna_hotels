@@ -113,7 +113,6 @@ export const assets = {
   facebook_icon,
   twitter_icon,
   cross_icon,
-  selector_icon,
 };
 export const roomsList = [
    {
